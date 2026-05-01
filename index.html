@@ -4,32 +4,596 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Peter Moroney Consulting</title>
+
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Libre+Baskerville:ital@0;1&family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
+
 <style>
-*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}:root{--ink:#1a1612;--paper:#f5f0e8;--cream:#ede6d6;--sepia:#8b7355;--rust:#8b3a2a;--gold:#b8922a}html{scroll-behavior:smooth}body{background:var(--paper);color:var(--ink);font-family:'Libre Baskerville',Georgia,serif;font-size:17px;line-height:1.8;min-height:100vh}body::before{content:'';position:fixed;inset:0;background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 512 512' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.75' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.04'/%3E%3C/svg%3E");pointer-events:none;z-index:100;opacity:.4}.nav{position:absolute;top:26px;left:60px;right:60px;z-index:5;display:flex;justify-content:flex-end;gap:22px;font-family:'Montserrat',sans-serif;font-size:.62rem;letter-spacing:.22em;text-transform:uppercase}.nav a{color:var(--sepia);text-decoration:none;border-bottom:1px solid transparent}.nav a:hover,.nav a.active{color:var(--rust);border-bottom-color:rgba(139,58,42,.45)}header{position:relative;min-height:78vh;padding:74px 60px 70px;border-bottom:1px solid rgba(139,115,85,.25);display:flex;flex-direction:column;justify-content:space-between;overflow:hidden}.rule{position:absolute;top:0;left:60px;right:60px;height:3px;background:linear-gradient(90deg,var(--rust),var(--gold),transparent)}.logo{width:min(780px,72vw);align-self:center;margin-top:16px;opacity:.96;mix-blend-mode:multiply}.hero{max-width:760px;margin:0 auto;text-align:center}.eyebrow{font-family:'Montserrat',sans-serif;font-size:.68rem;letter-spacing:.32em;text-transform:uppercase;color:var(--sepia);margin-bottom:18px}h1{font-family:'Cormorant Garamond',Georgia,serif;font-size:clamp(3rem,7vw,5.8rem);font-weight:300;letter-spacing:-.02em;line-height:.95;margin-bottom:24px}h1 em{font-style:italic;color:var(--rust)}.hero p{max-width:680px;margin:0 auto 30px;font-size:clamp(1.05rem,2vw,1.25rem);color:#2a2420}.buttons{display:flex;justify-content:center;gap:16px;flex-wrap:wrap}.button{display:inline-block;font-family:'Montserrat',sans-serif;font-size:.68rem;letter-spacing:.22em;text-transform:uppercase;color:var(--paper);background:var(--rust);padding:13px 18px;text-decoration:none;border:1px solid var(--rust)}.button.secondary{color:var(--rust);background:transparent}main{max-width:960px;margin:0 auto;padding:70px 60px 100px}.opening{font-family:'Cormorant Garamond',serif;font-size:clamp(1.25rem,2.5vw,1.65rem);font-style:italic;font-weight:300;line-height:1.6;border-left:3px solid var(--rust);padding-left:28px;margin-bottom:60px}section{margin-bottom:56px}section h2,.panel h2{font-family:'Montserrat',sans-serif;font-size:.65rem;font-weight:400;letter-spacing:.3em;text-transform:uppercase;color:var(--gold);margin-bottom:18px}section p{color:#2a2420;margin-bottom:1.1em}.three{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-top:30px}.mini{border-top:1px solid rgba(139,115,85,.25);padding-top:22px}.mini h3{font-family:'Cormorant Garamond',serif;font-size:1.7rem;font-weight:400;font-style:italic;color:var(--rust);margin-bottom:6px}.mini p{font-size:.92rem;color:var(--sepia);line-height:1.65}.panel{background:var(--cream);border:1px solid rgba(139,115,85,.2);padding:44px 48px;margin:60px 0;position:relative}.panel::before{content:'PM';position:absolute;top:-22px;left:48px;font-family:'Cormorant Garamond',serif;font-size:2.2rem;font-weight:300;color:var(--rust);background:var(--cream);padding:0 10px;line-height:1}.item{padding:22px 0;border-bottom:1px solid rgba(139,115,85,.18);display:grid;grid-template-columns:1fr auto;gap:24px;align-items:start}.item:last-child{border-bottom:none;padding-bottom:0}.title{font-family:'Cormorant Garamond',serif;font-size:1.55rem;font-style:italic;font-weight:400;margin-bottom:6px}.desc{font-size:.92rem;color:var(--sepia);line-height:1.65}.tag{font-family:'Montserrat',sans-serif;font-size:.58rem;letter-spacing:.2em;text-transform:uppercase;color:var(--paper);background:var(--rust);padding:5px 10px;white-space:nowrap;margin-top:4px}.tag.gold{background:var(--gold)}.steps{counter-reset:step;display:grid;gap:18px}.step{counter-increment:step;padding:22px 0 22px 54px;border-bottom:1px solid rgba(139,115,85,.18);position:relative}.step::before{content:counter(step,decimal-leading-zero);position:absolute;left:0;top:18px;font-family:'Montserrat',sans-serif;font-size:.68rem;letter-spacing:.18em;color:var(--gold)}.step h3{font-family:'Cormorant Garamond',serif;font-size:1.35rem;font-style:italic;font-weight:400}.step p{margin:2px 0 0;font-size:.93rem;color:var(--sepia)}.cta{border-top:1px solid rgba(139,115,85,.25);padding-top:44px;margin-top:60px;text-align:center}.cta p{font-family:'Cormorant Garamond',serif;font-size:clamp(1.35rem,2.6vw,1.8rem);font-style:italic;line-height:1.5;max-width:680px;margin:0 auto 28px}footer{text-align:center;padding:40px 60px;font-family:'Montserrat',sans-serif;font-size:.6rem;letter-spacing:.25em;text-transform:uppercase;color:rgba(139,115,85,.5);border-top:1px solid rgba(139,115,85,.15)}footer a{color:rgba(139,115,85,.75);text-decoration:none;border-bottom:1px solid rgba(139,115,85,.25)}@media(max-width:760px){.nav{position:relative;top:auto;left:auto;right:auto;justify-content:center;padding:22px 20px 0;gap:18px;flex-wrap:wrap}header{min-height:auto;padding:20px 28px 58px}.rule{left:28px;right:28px}.logo{width:100%;margin:20px auto 42px}main{padding:50px 28px 70px}.three{grid-template-columns:1fr}.panel{padding:34px 24px}.item{grid-template-columns:1fr}}
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --ink: #1a1612;
+  --paper: #f5f0e8;
+  --cream: #ede6d6;
+  --sepia: #8b7355;
+  --rust: #8b3a2a;
+  --gold: #b8922a;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--paper);
+  color: var(--ink);
+  font-family: 'Libre Baskerville', Georgia, serif;
+  font-size: 17px;
+  line-height: 1.8;
+  min-height: 100vh;
+}
+
+body::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 512 512' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.75' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.04'/%3E%3C/svg%3E");
+  pointer-events: none;
+  z-index: 100;
+  opacity: 0.4;
+}
+
+.nav {
+  position: absolute;
+  top: 26px;
+  left: 60px;
+  right: 60px;
+  z-index: 5;
+  display: flex;
+  justify-content: flex-end;
+  gap: 22px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.62rem;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+}
+
+.nav a {
+  color: var(--sepia);
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+}
+
+.nav a:hover,
+.nav a.active {
+  color: var(--rust);
+  border-bottom-color: rgba(139,58,42,0.45);
+}
+
+header {
+  position: relative;
+  min-height: 78vh;
+  padding: 74px 60px 70px;
+  border-bottom: 1px solid rgba(139,115,85,0.25);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  overflow: hidden;
+}
+
+.rule {
+  position: absolute;
+  top: 0;
+  left: 60px;
+  right: 60px;
+  height: 3px;
+  background: linear-gradient(90deg, var(--rust), var(--gold), transparent);
+}
+
+.logo {
+  width: min(780px, 72vw);
+  align-self: center;
+  margin-top: 16px;
+  opacity: 0.96;
+  mix-blend-mode: multiply;
+}
+
+.hero {
+  max-width: 760px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.eyebrow {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.68rem;
+  letter-spacing: 0.32em;
+  text-transform: uppercase;
+  color: var(--sepia);
+  margin-bottom: 18px;
+}
+
+h1 {
+  font-family: 'Cormorant Garamond', Georgia, serif;
+  font-size: clamp(3rem, 7vw, 5.8rem);
+  font-weight: 300;
+  letter-spacing: -0.02em;
+  line-height: 0.95;
+  margin-bottom: 24px;
+}
+
+h1 em {
+  font-style: italic;
+  color: var(--rust);
+}
+
+.hero p {
+  max-width: 680px;
+  margin: 0 auto 30px;
+  font-size: clamp(1.05rem, 2vw, 1.25rem);
+  color: #2a2420;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.button {
+  display: inline-block;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.68rem;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--paper);
+  background: var(--rust);
+  padding: 13px 18px;
+  text-decoration: none;
+  border: 1px solid var(--rust);
+}
+
+.button.secondary {
+  color: var(--rust);
+  background: transparent;
+}
+
+main {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 70px 60px 100px;
+}
+
+.opening {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: clamp(1.25rem, 2.5vw, 1.65rem);
+  font-style: italic;
+  font-weight: 300;
+  line-height: 1.6;
+  border-left: 3px solid var(--rust);
+  padding-left: 28px;
+  margin-bottom: 60px;
+}
+
+section {
+  margin-bottom: 56px;
+}
+
+section h2,
+.panel h2 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.65rem;
+  font-weight: 400;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin-bottom: 18px;
+}
+
+section p {
+  color: #2a2420;
+  margin-bottom: 1.1em;
+}
+
+.three {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  margin-top: 30px;
+}
+
+.mini {
+  border-top: 1px solid rgba(139,115,85,0.25);
+  padding-top: 22px;
+}
+
+.mini h3 {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.7rem;
+  font-weight: 400;
+  font-style: italic;
+  color: var(--rust);
+  margin-bottom: 6px;
+}
+
+.mini p {
+  font-size: 0.92rem;
+  color: var(--sepia);
+  line-height: 1.65;
+}
+
+.panel {
+  background: var(--cream);
+  border: 1px solid rgba(139,115,85,0.2);
+  padding: 44px 48px;
+  margin: 60px 0;
+  position: relative;
+}
+
+.panel::before {
+  content: 'PM';
+  position: absolute;
+  top: -22px;
+  left: 48px;
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 2.2rem;
+  font-weight: 300;
+  color: var(--rust);
+  background: var(--cream);
+  padding: 0 10px;
+  line-height: 1;
+}
+
+.item {
+  padding: 22px 0;
+  border-bottom: 1px solid rgba(139,115,85,0.18);
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 24px;
+  align-items: start;
+}
+
+.item:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+.title {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.55rem;
+  font-style: italic;
+  font-weight: 400;
+  margin-bottom: 6px;
+}
+
+.desc {
+  font-size: 0.92rem;
+  color: var(--sepia);
+  line-height: 1.65;
+}
+
+.tag {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.58rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--paper);
+  background: var(--rust);
+  padding: 5px 10px;
+  white-space: nowrap;
+  margin-top: 4px;
+}
+
+.tag.gold {
+  background: var(--gold);
+}
+
+.steps {
+  counter-reset: step;
+  display: grid;
+  gap: 18px;
+}
+
+.step {
+  counter-increment: step;
+  padding: 22px 0 22px 54px;
+  border-bottom: 1px solid rgba(139,115,85,0.18);
+  position: relative;
+}
+
+.step::before {
+  content: counter(step, decimal-leading-zero);
+  position: absolute;
+  left: 0;
+  top: 18px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.68rem;
+  letter-spacing: 0.18em;
+  color: var(--gold);
+}
+
+.step h3 {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.35rem;
+  font-style: italic;
+  font-weight: 400;
+}
+
+.step p {
+  margin: 2px 0 0;
+  font-size: 0.93rem;
+  color: var(--sepia);
+}
+
+.cta {
+  border-top: 1px solid rgba(139,115,85,0.25);
+  padding-top: 44px;
+  margin-top: 60px;
+  text-align: center;
+}
+
+.cta p {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: clamp(1.35rem, 2.6vw, 1.8rem);
+  font-style: italic;
+  line-height: 1.5;
+  max-width: 680px;
+  margin: 0 auto 28px;
+}
+
+footer {
+  text-align: center;
+  padding: 40px 60px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.6rem;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  color: rgba(139,115,85,0.5);
+  border-top: 1px solid rgba(139,115,85,0.15);
+}
+
+footer a {
+  color: rgba(139,115,85,0.75);
+  text-decoration: none;
+  border-bottom: 1px solid rgba(139,115,85,0.25);
+}
+
+@media (max-width: 760px) {
+  .nav {
+    position: relative;
+    top: auto;
+    left: auto;
+    right: auto;
+    justify-content: center;
+    padding: 22px 20px 0;
+    gap: 18px;
+    flex-wrap: wrap;
+  }
+
+  header {
+    min-height: auto;
+    padding: 20px 28px 58px;
+  }
+
+  .rule {
+    left: 28px;
+    right: 28px;
+  }
+
+  .logo {
+    width: 100%;
+    margin: 20px auto 42px;
+  }
+
+  main {
+    padding: 50px 28px 70px;
+  }
+
+  .three {
+    grid-template-columns: 1fr;
+  }
+
+  .panel {
+    padding: 34px 24px;
+  }
+
+  .item {
+    grid-template-columns: 1fr;
+  }
+}
 </style>
 </head>
+
 <body>
+
 <nav class="nav">
-  <a href="index.html">Overview</a>
+  <a class="active" href="index.html">Overview</a>
   <a href="rates.html">Rates &amp; Engagement</a>
   <a href="approach.html">Approach</a>
   <a href="mailto:inquiry@petermoroney.com?subject=Consulting%20enquiry">Contact</a>
 </nav>
-<header><div class="rule"></div><img class="logo" src="pm-consulting-header.jpeg" alt="Peter Moroney Consulting logo"><div class="hero"><div class="eyebrow">Content · SEO · AI Engagement</div><h1>Turn website traffic into <em>real enquiries</em></h1><p>Practical digital consulting for businesses that want sharper content, stronger search visibility, and better ways to convert interest into action.</p><div class="buttons"><a class="button" <a href="https://calendly.com/peter-moroney-1byb/30min" target="_blank" rel="noopener">
-  Book a 20-minute call
-</a>
-</a> class="button secondary" href="rates.html">View engagement options</a></div></div></header>
+
+<header>
+  <div class="rule"></div>
+
+  <img class="logo" src="pm-consulting-header.jpeg" alt="Peter Moroney Consulting logo">
+
+  <div class="hero">
+    <div class="eyebrow">Content · SEO · AI Engagement</div>
+
+    <h1>Turn website traffic into <em>real enquiries</em></h1>
+
+    <p>
+      Practical digital consulting for businesses that want sharper content, stronger search visibility,
+      and better ways to convert interest into action.
+    </p>
+
+    <div class="buttons">
+      <a class="button" href="https://calendly.com/peter-moroney-1byb/30min" target="_blank" rel="noopener">
+        Book a 30-minute call
+      </a>
+      <a class="button secondary" href="rates.html">
+        View engagement options
+      </a>
+    </div>
+  </div>
+</header>
+
 <main>
-<div class="opening">Most websites do not have a traffic problem. They have an engagement and conversion problem. I help businesses fix that with content, SEO, and AI-driven customer engagement that makes the next step clear.</div>
-<section><h2>What I Do</h2><p>I work with businesses to improve how their websites perform, not just how they look. The focus is simple: attract the right audience, keep them engaged, and make it easier for them to enquire, book, subscribe, or buy.</p><div class="three"><div class="mini"><h3>Attract</h3><p>SEO-led content that gives your audience useful reasons to find and visit your site.</p></div><div class="mini"><h3>Engage</h3><p>Clearer website content and chatbot journeys that answer questions and guide visitors.</p></div><div class="mini"><h3>Convert</h3><p>Better pathways from interest to enquiry, using content, structure, and practical AI tools.</p></div></div></section>
-<div class="panel" id="services"><h2>Services</h2><div class="item"><div><div class="title">Foundation</div><div class="desc">SEO-focused articles, website content improvements, keyword targeting, on-page optimisation, and light AI workflow setup. Best for businesses starting to build visibility and consistent traffic.</div></div><div class="tag">Visibility</div></div><div class="item"><div><div class="title">Growth</div><div class="desc">Everything in Foundation, plus chatbot design, conversion-focused content improvements, monthly review, and ongoing refinement. Best for businesses that want more from the traffic they already have.</div></div><div class="tag gold">Leads</div></div><div class="item"><div><div class="title">Advisory</div><div class="desc">Monthly strategy sessions, AI and digital optimisation guidance, funnel and process review, and prioritised action plans. Best for owners who want clear direction without guesswork.</div></div><div class="tag">Strategy</div></div><div class="item"><div><div class="title">Chatbot Implementation</div><div class="desc">A focused project covering conversation design, website integration, lead capture flows, testing, and refinement. Designed to improve engagement and reduce friction for customers.</div></div><div class="tag gold">Project</div></div></div>
-<section><h2>How I Work</h2><div class="steps"><div class="step"><h3>Understand</h3><p>Your business, audience, goals, website, and current customer journey.</p></div><div class="step"><h3>Identify</h3><p>Where you are losing traffic, engagement, enquiries, or operational efficiency.</p></div><div class="step"><h3>Implement</h3><p>Targeted improvements across content, SEO, chatbot design, and AI-enabled workflows.</p></div><div class="step"><h3>Refine</h3><p>Review what is working and improve the system based on evidence, not assumptions.</p></div></div></section>
-<section><h2>Who It Is For</h2><p>This work suits service-based businesses, event and venue operators, content-driven websites, and SMEs that want to use AI in practical ways. It is especially useful for businesses with a website that gets some attention, but does not yet produce enough enquiries or customer action.</p></section>
-<section><h2>About</h2><p>My background spans content, SEO, chatbot design, digital marketing, and business process improvement. That mix lets me look at a website as a working business system: how people arrive, what they need, where they hesitate, and what should happen next.</p><p>Most of my work is remote, focused, and practical. I work on a retainer or project basis, with a preference for steady improvement rather than noisy activity.</p></section>
-<div class="cta"><p>If your website is getting traffic but not enough enquiries, it is worth a conversation.</p><div class="buttons"><a class="button" <a href="https://calendly.com/peter-moroney-1byb/30min" target="_blank" rel="noopener">
-  Book a 20-minute call
-</a>
-</a><a class="button secondary" href="rates.html">Rates &amp; Engagement</a></div></div>
-</main><footer>&copy; Peter Moroney Consulting · Melbourne, Australia &nbsp;·&nbsp; <a href="rates.html">Rates &amp; Engagement</a></footer>
-</body></html>
+
+  <div class="opening">
+    Most websites do not have a traffic problem. They have an engagement and conversion problem.
+    I help businesses fix that with content, SEO, and AI-driven customer engagement that makes the next step clear.
+  </div>
+
+  <section>
+    <h2>What I Do</h2>
+
+    <p>
+      I work with businesses to improve how their websites perform, not just how they look.
+      The focus is simple: attract the right audience, keep them engaged, and make it easier for them to enquire, book, subscribe, or buy.
+    </p>
+
+    <div class="three">
+      <div class="mini">
+        <h3>Attract</h3>
+        <p>SEO-led content that gives your audience useful reasons to find and visit your site.</p>
+      </div>
+
+      <div class="mini">
+        <h3>Engage</h3>
+        <p>Clearer website content and chatbot journeys that answer questions and guide visitors.</p>
+      </div>
+
+      <div class="mini">
+        <h3>Convert</h3>
+        <p>Better pathways from interest to enquiry, using content, structure, and practical AI tools.</p>
+      </div>
+    </div>
+  </section>
+
+  <div class="panel" id="services">
+    <h2>Services</h2>
+
+    <div class="item">
+      <div>
+        <div class="title">Foundation</div>
+        <div class="desc">
+          SEO-focused articles, website content improvements, keyword targeting, on-page optimisation,
+          and light AI workflow setup. Best for businesses starting to build visibility and consistent traffic.
+        </div>
+      </div>
+      <div class="tag">Visibility</div>
+    </div>
+
+    <div class="item">
+      <div>
+        <div class="title">Growth</div>
+        <div class="desc">
+          Everything in Foundation, plus chatbot design, conversion-focused content improvements,
+          monthly review, and ongoing refinement. Best for businesses that want more from the traffic they already have.
+        </div>
+      </div>
+      <div class="tag gold">Leads</div>
+    </div>
+
+    <div class="item">
+      <div>
+        <div class="title">Advisory</div>
+        <div class="desc">
+          Monthly strategy sessions, AI and digital optimisation guidance, funnel and process review,
+          and prioritised action plans. Best for owners who want clear direction without guesswork.
+        </div>
+      </div>
+      <div class="tag">Strategy</div>
+    </div>
+
+    <div class="item">
+      <div>
+        <div class="title">Chatbot Implementation</div>
+        <div class="desc">
+          A focused project covering conversation design, website integration, lead capture flows,
+          testing, and refinement. Designed to improve engagement and reduce friction for customers.
+        </div>
+      </div>
+      <div class="tag gold">Project</div>
+    </div>
+  </div>
+
+  <section>
+    <h2>How I Work</h2>
+
+    <div class="steps">
+      <div class="step">
+        <h3>Understand</h3>
+        <p>Your business, audience, goals, website, and current customer journey.</p>
+      </div>
+
+      <div class="step">
+        <h3>Identify</h3>
+        <p>Where you are losing traffic, engagement, enquiries, or operational efficiency.</p>
+      </div>
+
+      <div class="step">
+        <h3>Implement</h3>
+        <p>Targeted improvements across content, SEO, chatbot design, and AI-enabled workflows.</p>
+      </div>
+
+      <div class="step">
+        <h3>Refine</h3>
+        <p>Review what is working and improve the system based on evidence, not assumptions.</p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Who It Is For</h2>
+
+    <p>
+      This work suits service-based businesses, event and venue operators, content-driven websites,
+      and SMEs that want to use AI in practical ways. It is especially useful for businesses with a website
+      that gets some attention, but does not yet produce enough enquiries or customer action.
+    </p>
+  </section>
+
+  <section>
+    <h2>About</h2>
+
+    <p>
+      My background spans content, SEO, chatbot design, digital marketing, and business process improvement.
+      That mix lets me look at a website as a working business system: how people arrive, what they need,
+      where they hesitate, and what should happen next.
+    </p>
+
+    <p>
+      Most of my work is remote, focused, and practical. I work on a retainer or project basis,
+      with a preference for steady improvement rather than noisy activity.
+    </p>
+  </section>
+
+  <div class="cta">
+    <p>If your website is getting traffic but not enough enquiries, it is worth a conversation.</p>
+
+    <div class="buttons">
+      <a class="button" href="https://calendly.com/peter-moroney-1byb/30min" target="_blank" rel="noopener">
+        Book a 30-minute call
+      </a>
+      <a class="button secondary" href="rates.html">
+        Rates &amp; Engagement
+      </a>
+    </div>
+  </div>
+
+</main>
+
+<footer>
+  &copy; Peter Moroney Consulting · Melbourne, Australia &nbsp;·&nbsp;
+  <a href="rates.html">Rates &amp; Engagement</a>
+</footer>
+
+</body>
+</html>
