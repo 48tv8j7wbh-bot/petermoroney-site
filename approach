@@ -1,3 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PM Consulting — Approach</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300&family=Libre+Baskerville&family=Montserrat:wght@300;400&display=swap" rel="stylesheet">
+
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  :root {
+    --ink: #1a1612;
+    --paper: #f5f0e8;
+    --cream: #ede6d6;
+    --sepia: #8b7355;
+    --rust: #8b3a2a;
+    --gold: #b8922a;
+  }
+
+  body {
+    background: var(--paper);
+    color: var(--ink);
+    font-family: 'Libre Baskerville', serif;
+    line-height: 1.8;
+  }
+
+  header {
+    padding: 70px 60px 40px;
+    border-bottom: 1px solid rgba(139,115,85,0.25);
+  }
+
+  h1 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 3rem;
+    font-weight: 300;
+  }
+
+  .subhead {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.7rem;
+    letter-spacing: 0.3em;
+    text-transform: uppercase;
+    color: var(--sepia);
+    margin-top: 10px;
+  }
+
+  .nav {
+    margin-top: 30px;
+  }
+
+  .nav a {
+    margin-right: 20px;
+    text-decoration: none;
+    color: var(--sepia);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.75rem;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+  }
+
+  .nav a.active {
+    color: var(--rust);
+    border-bottom: 1px solid var(--rust);
+  }
+
+  main {
+    max-width: 860px;
+    margin: 0 auto;
+    padding: 60px;
+  }
+
+  .opening {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.5rem;
+    font-style: italic;
+    border-left: 3px solid var(--rust);
+    padding-left: 24px;
+    margin-bottom: 50px;
+  }
+
+  section {
+    margin-bottom: 50px;
+  }
+
+  section h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.7rem;
+    letter-spacing: 0.3em;
+    text-transform: uppercase;
+    color: var(--gold);
+    margin-bottom: 18px;
+  }
+
+  footer {
+    text-align: center;
+    padding: 40px;
+    font-size: 0.6rem;
+    letter-spacing: 0.25em;
+    text-transform: uppercase;
+    color: rgba(139,115,85,0.5);
+    border-top: 1px solid rgba(139,115,85,0.15);
+  }
+
+</style>
+</head>
+
+<body>
+
+<header>
+  <h1>Approach</h1>
+  <div class="subhead">PM Consulting · Melbourne</div>
+
+  <nav class="nav">
+    <a href="index.html">Overview</a>
+    <a href="rates.html">Rates &amp; Engagement</a>
+    <a class="active" href="approach.html">Approach</a>
+    <a href="mailto:inquiry@petermoroney.com?subject=Consulting%20enquiry">Contact</a>
+  </nav>
+</header>
+
 <main>
 
 <div class="opening">
@@ -12,7 +134,11 @@ My work sits at the intersection of content, search, customer engagement, and pr
 </p>
 
 <p>
-A typical engagement begins by identifying where a business is losing momentum — not enough visibility, weak engagement, or missed opportunities to convert interest into enquiry. From there, improvements are made in a focused, practical way. Content is structured to attract the right audience. Engagement is strengthened through clearer pathways and, where appropriate, conversational interfaces. The aim is not to add complexity, but to remove friction.
+A typical engagement begins by identifying where a business is losing momentum — whether in visibility, engagement, or conversion. From there, improvements are made in a focused, practical way. Content is structured to attract the right audience. Engagement is strengthened through clearer pathways and, where appropriate, conversational interfaces.
+</p>
+
+<p>
+The aim is not to add complexity, but to remove friction.
 </p>
 
 <p>
@@ -33,11 +159,11 @@ More recently, my work has centred on digital environments. This includes the de
 </p>
 
 <p>
-A current focus has been the development of content and engagement systems across a network of event and lifestyle websites. The objective is not simply to publish information, but to create consistent traffic, improve user interaction, and generate measurable enquiry for participating businesses.
+A current focus has been the development of content and engagement systems across a network of event and lifestyle websites, designed to generate traffic, improve interaction, and produce consistent enquiry.
 </p>
 
 <p>
-Alongside this, I work with AI tools in a practical capacity — not as an end in themselves, but as a means to streamline production, improve responsiveness, and reduce manual effort in day-to-day operations.
+Alongside this, I work with AI tools in a practical capacity — as a way to streamline production, improve responsiveness, and reduce manual effort.
 </p>
 
 </section>
@@ -50,9 +176,16 @@ Most gains come from alignment rather than invention. When content, search, and 
 </p>
 
 <p>
-My role is to bring those elements into alignment, and to do so in a way that is sustainable — not dependent on constant intervention, but capable of improving over time.
+My role is to bring those elements into alignment, and to do so in a way that is sustainable — capable of improving over time, rather than dependent on constant intervention.
 </p>
 
 </section>
 
 </main>
+
+<footer>
+PM Consulting · Melbourne, Australia
+</footer>
+
+</body>
+</html>
