@@ -4,9 +4,17 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Peter Moroney — Author</title>
+
+<meta name="robots" content="noindex">
+
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Libre+Baskerville:ital@0;1&family=Montserrat:wght@300;400&display=swap" rel="stylesheet">
+
 <style>
-  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  *, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
 
   :root {
     --ink: #1a1612;
@@ -18,7 +26,9 @@
     --pale: #faf7f2;
   }
 
-  html { scroll-behavior: smooth; }
+  html {
+    scroll-behavior: smooth;
+  }
 
   body {
     background: var(--paper);
@@ -29,7 +39,6 @@
     min-height: 100vh;
   }
 
-  /* Grain overlay */
   body::before {
     content: '';
     position: fixed;
@@ -40,7 +49,6 @@
     opacity: 0.4;
   }
 
-  /* Header */
   header {
     position: relative;
     padding: 80px 60px 60px;
@@ -75,7 +83,7 @@
     color: var(--rust);
   }
 
-  .name-block .byline {
+  .byline {
     margin-top: 14px;
     font-family: 'Montserrat', sans-serif;
     font-size: 0.7rem;
@@ -96,14 +104,12 @@
     padding-bottom: 8px;
   }
 
-  /* Main layout */
   main {
     max-width: 860px;
     margin: 0 auto;
     padding: 70px 60px 100px;
   }
 
-  /* Pull quote / opening */
   .opening {
     font-family: 'Cormorant Garamond', serif;
     font-size: clamp(1.25rem, 2.5vw, 1.6rem);
@@ -117,13 +123,13 @@
     animation: slideIn 1s ease 0.3s both;
   }
 
-  /* Body sections */
   section {
     margin-bottom: 52px;
     animation: fadeIn 1s ease 0.5s both;
   }
 
-  section h2 {
+  section h2,
+  .works h2 {
     font-family: 'Montserrat', sans-serif;
     font-size: 0.65rem;
     font-weight: 400;
@@ -138,9 +144,10 @@
     margin-bottom: 1.1em;
   }
 
-  section p:last-child { margin-bottom: 0; }
+  section p:last-child {
+    margin-bottom: 0;
+  }
 
-  /* Works panel */
   .works {
     background: var(--cream);
     border: 1px solid rgba(139,115,85,0.2);
@@ -165,12 +172,6 @@
   }
 
   .works h2 {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 0.65rem;
-    font-weight: 400;
-    letter-spacing: 0.3em;
-    text-transform: uppercase;
-    color: var(--gold);
     margin-bottom: 28px;
   }
 
@@ -180,11 +181,17 @@
     display: grid;
     grid-template-columns: 1fr auto;
     gap: 20px;
-    align-start: start;
+    align-items: start;
   }
 
-  .work-item:last-child { border-bottom: none; padding-bottom: 0; }
-  .work-item:first-of-type { padding-top: 0; }
+  .work-item:last-child {
+    border-bottom: none;
+    padding-bottom: 0;
+  }
+
+  .work-item:first-of-type {
+    padding-top: 0;
+  }
 
   .work-title {
     font-family: 'Cormorant Garamond', serif;
@@ -218,28 +225,81 @@
     background: var(--gold);
   }
 
-  /* Blog note */
-  .blog-note {
-    border-top: 1px solid rgba(139,115,85,0.25);
-    padding-top: 40px;
-    margin-top: 60px;
-    font-size: 0.9rem;
+  .theme-list {
+    list-style: none;
+    margin-top: 22px;
+    border-top: 1px solid rgba(139,115,85,0.22);
+  }
+
+  .theme-list li {
+    padding: 12px 0;
+    border-bottom: 1px solid rgba(139,115,85,0.18);
     color: var(--sepia);
+  }
+
+  .theme-list li::before {
+    content: '§';
+    color: var(--rust);
+    margin-right: 12px;
+    font-family: 'Cormorant Garamond', serif;
     font-style: italic;
+  }
+
+  blockquote {
+    border-left: 3px solid var(--rust);
+    padding-left: 28px;
+    color: #2a2420;
+  }
+
+  blockquote p {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: clamp(1.18rem, 2.2vw, 1.45rem);
+    font-style: italic;
+    line-height: 1.65;
+  }
+
+  .cta {
+    border-top: 1px solid rgba(139,115,85,0.25);
+    padding-top: 44px;
+    margin-top: 60px;
+    text-align: center;
     animation: fadeIn 1s ease 0.9s both;
   }
 
-  .blog-note a {
-    color: var(--rust);
+  .cta p {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: clamp(1.25rem, 2.5vw, 1.55rem);
+    font-style: italic;
+    line-height: 1.5;
+    max-width: 680px;
+    margin: 0 auto 28px;
+  }
+
+  .buttons {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    flex-wrap: wrap;
+  }
+
+  .button {
+    display: inline-block;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.68rem;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    color: var(--paper);
+    background: var(--rust);
+    padding: 13px 18px;
     text-decoration: none;
-    border-bottom: 1px solid rgba(139,58,42,0.35);
+    border: 1px solid var(--rust);
   }
 
-  .blog-note a:hover {
-    border-bottom-color: var(--rust);
+  .button:hover {
+    background: transparent;
+    color: var(--rust);
   }
 
-  /* Footer */
   footer {
     text-align: center;
     padding: 40px 60px;
@@ -251,7 +311,6 @@
     border-top: 1px solid rgba(139,115,85,0.15);
   }
 
-  /* Animations */
   @keyframes fadeIn {
     from { opacity: 0; transform: translateY(12px); }
     to { opacity: 1; transform: translateY(0); }
@@ -263,23 +322,45 @@
   }
 
   @media (max-width: 640px) {
-    header { padding: 50px 28px 40px; grid-template-columns: 1fr; }
-    .header-rule { left: 28px; right: 28px; }
-    .header-deco { display: none; }
-    main { padding: 50px 28px 70px; }
-    .works { padding: 32px 24px; }
-    .work-item { grid-template-columns: 1fr; }
+    header {
+      padding: 50px 28px 40px;
+      grid-template-columns: 1fr;
+    }
+
+    .header-rule {
+      left: 28px;
+      right: 28px;
+    }
+
+    .header-deco {
+      display: none;
+    }
+
+    main {
+      padding: 50px 28px 70px;
+    }
+
+    .works {
+      padding: 32px 24px;
+    }
+
+    .work-item {
+      grid-template-columns: 1fr;
+    }
   }
 </style>
 </head>
+
 <body>
 
 <header>
   <div class="header-rule"></div>
+
   <div class="name-block">
     <h1>Peter<br><em>Moroney</em></h1>
     <p class="byline">Novelist &amp; Memoirist &nbsp;·&nbsp; Melbourne, Australia</p>
   </div>
+
   <div class="header-deco">&ldquo;</div>
 </header>
 
@@ -297,9 +378,9 @@
 
   <section>
     <h2>The Writing</h2>
-    <p>Peter Moroney writes in two distinct but related modes. His fiction — three novels completed or in progress — explores how people live with the damage done to them: the long aftermath of harm, the private compromises we make to keep going, and how the past resurfaces in the body and the choices we make long after the original wound. These are not novels of resolution. They resist simplification and remain attentive to ambiguity.</p>
-    <p>Alongside the fiction runs an extensive body of autobiographical writing, centred on his long-running journals and blog <em>Hieronymous</em>. Here, Peter undertakes a sustained exploration of memory, returning to earlier periods of his life through diaries, fragments, and recollection. The work develops slowly, often without predetermined conclusions, characterised by intellectual honesty and emotional courage — a refusal to tidy experience into something more palatable than it was.</p>
-    <p>Across both forms, a central question persists: how do we carry what has been done to us? How does damage shape a life — and how, sometimes, does it also enlarge one?</p>
+    <p>Peter Moroney writes in two distinct but related modes. His fiction – three novels completed or in progress – explores how people live with the damage done to them: the long aftermath of harm, the private compromises we make to keep going, and how the past resurfaces in the body and the choices we make long after the original wound. These are not novels of resolution. They resist simplification and remain attentive to ambiguity.</p>
+    <p>Alongside the fiction runs an extensive body of autobiographical writing, centred on his long-running journals and blog <em>Hieronymous</em>. Here, Peter undertakes a sustained exploration of memory, returning to earlier periods of his life through diaries, fragments, and recollection. The work develops slowly, often without predetermined conclusions, characterised by intellectual honesty and emotional courage – a refusal to tidy experience into something more palatable than it was.</p>
+    <p>Across both forms, a central question persists: how do we carry what has been done to us? How does damage shape a life – and how, sometimes, does it also enlarge one?</p>
   </section>
 
   <div class="works">
@@ -332,62 +413,48 @@
     <div class="work-item">
       <div>
         <div class="work-title">Hieronymous</div>
-        <div class="work-desc">An ongoing autobiographical project, published as a blog and developed across multiple interconnected series — including <em>Before the Blog</em>, a sequence drawing on childhood memory, and an extended engagement with rediscovered diaries.</div>
+        <div class="work-desc">An ongoing autobiographical project, published as a blog and developed across multiple interconnected series, including <em>Before the Blog</em>, a sequence drawing on childhood memory, and an extended engagement with rediscovered diaries.</div>
       </div>
       <div class="work-status in-progress">Ongoing</div>
     </div>
-
   </div>
 
- <section class="themes">
+  <section class="themes">
+    <h2>Themes</h2>
+    <p>Across his fiction and autobiographical writing, Peter Moroney returns to the forces that shape a life after damage: memory, guilt, silence, concealment, and the uneasy possibility of redemption.</p>
 
-  <h2>Themes</h2>
+    <ul class="theme-list">
+      <li>The long aftermath of personal damage</li>
+      <li>Memory as both revelation and distortion</li>
+      <li>Identity shaped by concealment, loss, and abandonment</li>
+      <li>Guilt, masculinity, and moral responsibility</li>
+      <li>The tension between truth and self-preservation</li>
+    </ul>
+  </section>
 
-  <p>Across his fiction and autobiographical writing, Peter Moroney returns to the forces that shape a life after damage: memory, guilt, silence, concealment, and the uneasy possibility of redemption.</p>
+  <section class="why-now">
+    <h2>Why Now</h2>
 
-  <ul class="theme-list">
+    <blockquote>
+      <p>“I always wanted to write, from when I was a freckle-faced kid. The urge came naturally, and I returned to it over the years as a way of bringing order to what I felt, what I hoped for, and what I imagined. But I was too busy living to settle into it. Too much to see and do, so much to experience and understand, so much to conquer. I wanted to live big.</p>
 
-    <li>The long aftermath of personal damage</li>
+      <p>I did. I had my adventures. I had a full life. And then, without warning, I was hit by cancer. It was touch-and-go for a while, but I survived. I'm still the same person, but I see life differently, and my experience of it has changed.</p>
 
-    <li>Memory as both revelation and distortion</li>
+      <p>I needed to put it into words. I needed to explore it properly. I needed to reach inside to understand what I was before I forgot altogether. So I finally did the thing I had always promised myself I would do – I began my first novel.</p>
 
-    <li>Identity shaped by concealment, loss, and abandonment</li>
+      <p>All those years when I would write without purpose returned to me, and I understood it was the apprenticeship for this moment, and that the rich life of mine was actually the necessary material for my writing. I wasn't delayed: the timing wasn't right.”</p>
+    </blockquote>
+  </section>
 
-    <li>Guilt, masculinity, and moral responsibility</li>
+  <div class="cta">
+    <p>If you’d like to make contact about my writing, representation, or related work, you can reach me here.</p>
 
-    <li>The tension between truth and self-preservation</li>
-
-  </ul>
-
-</section>
-
- <section class="why-now">
-
-  <h2>Why Now</h2>
-
-  <blockquote>
-
-    <p>“I always wanted to write, from when I was a freckle-faced kid. The urge came naturally, and I returned to it over the years as a way of bringing order to what I felt, what I hoped for, and what I imagined. But I was too busy living to settle into it. Too much to see and do, so much to experience and understand, so much to conquer. I wanted to live big.</p>
-
-    <p>I did. I had my adventures. I had a full life. And then, without warning, I was hit by cancer.  It was touch-and-go for a while, but I survived. I'm still the same person, but I see life differently, and my experience of it has changed.</p>
-
-    <p>I needed to put it into words. I needed to explore it properly. I needed to reach inside to understand what I was before I forgot altogether. So I finally did the thing I had always promised myself I would do – I began my first novel.</p>
-
-    <p>All those years when I would write without purpose returned to me, and I understood it was the apprenticeship for this moment, and that the rich life of mine was actually the necessary material for my writing. I wasn't delayed: the timing wasn't right.”</p>
-
-  </blockquote>
-
-</section>
-
- <div class="cta">
-  <p>If you’d like to make contact about my writing, representation, or related work, you can reach me here.</p>
-
-  <div class="buttons">
-    <a class="button" href="mailto:peter@petermoroney.com?subject=Author%20enquiry">
-      Contact me
-    </a>
+    <div class="buttons">
+      <a class="button" href="mailto:peter@petermoroney.com?subject=Author%20enquiry">
+        Contact me
+      </a>
+    </div>
   </div>
-</div>
 
 </main>
 
