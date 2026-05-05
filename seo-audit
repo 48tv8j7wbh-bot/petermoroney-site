@@ -1,10 +1,20 @@
-<main>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>SEO Audit & Website Optimisation | Peter Moroney</title>
+<title>SEO Audit &amp; Website Optimisation | Peter Moroney</title>
 
 <meta name="description" content="Practical SEO audits for small to medium business websites. Identify technical issues, improve search visibility, strengthen conversion pathways and increase enquiries.">
 
 <link rel="canonical" href="https://petermoroney.com/seo-audit.html">
+
+<link rel="icon" type="image/png" sizes="32x32" href="favicon.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon.png">
+<link rel="apple-touch-icon" href="favicon.png">
+
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Libre+Baskerville:ital@0;1&family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
 
 <script type="application/ld+json">
 {
@@ -52,7 +62,7 @@
       "name": "Do you help implement the recommendations?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Yes. The audit can be provided as a standalone review, or Peter Moroney can help implement the recommended changes."
+        "text": "Yes. The audit can be provided as a standalone review, or I can help implement the recommended changes."
       }
     },
     {
@@ -67,26 +77,347 @@
 }
 </script>
 
-  <section class="hero">
-    <h1>SEO Audit & Website Optimisation</h1>
+<style>
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 
-    <p class="lead">
-      If your website isn’t generating enough enquiries, there’s usually a reason.
-    </p>
+:root {
+  --ink: #1a1612;
+  --paper: #f5f0e8;
+  --cream: #ede6d6;
+  --sepia: #8b7355;
+  --rust: #8b3a2a;
+  --gold: #b8922a;
+}
 
-    <p>
-      Most sites have a mix of technical issues, weak structure, unclear messaging, and poor conversion pathways. A practical SEO audit identifies what’s holding your site back – and what to fix first.
-    </p>
+html {
+  scroll-behavior: smooth;
+}
 
-    <div class="cta-row">
-      <a href="https://calendly.com/peter-moroney-1byb/30min" class="button">
-        Book a free 20-minute consultation
-      </a>
-      <a href="mailto:inquiry@petermoroney.com" class="button secondary">
-        Request an SEO audit
-      </a>
-    </div>
-  </section>
+body {
+  background: var(--paper);
+  color: var(--ink);
+  font-family: 'Libre Baskerville', Georgia, serif;
+  font-size: 17px;
+  line-height: 1.8;
+  min-height: 100vh;
+}
+
+body::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 512 512' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.75' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.04'/%3E%3C/svg%3E");
+  pointer-events: none;
+  z-index: 100;
+  opacity: 0.4;
+}
+
+.nav {
+  position: absolute;
+  top: 26px;
+  left: 60px;
+  right: 60px;
+  z-index: 5;
+  display: flex;
+  justify-content: flex-end;
+  gap: 22px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.62rem;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+}
+
+.nav a {
+  color: var(--sepia);
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+}
+
+.nav a:hover,
+.nav a.active {
+  color: var(--rust);
+  border-bottom-color: rgba(139,58,42,0.45);
+}
+
+header {
+  position: relative;
+  padding: 96px 60px 72px;
+  border-bottom: 1px solid rgba(139,115,85,0.25);
+  text-align: center;
+}
+
+.rule {
+  position: absolute;
+  top: 0;
+  left: 60px;
+  right: 60px;
+  height: 3px;
+  background: linear-gradient(90deg, var(--rust), var(--gold), transparent);
+}
+
+.eyebrow {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.68rem;
+  letter-spacing: 0.32em;
+  text-transform: uppercase;
+  color: var(--sepia);
+  margin-bottom: 18px;
+}
+
+h1 {
+  font-family: 'Cormorant Garamond', Georgia, serif;
+  font-size: clamp(3rem, 7vw, 5.6rem);
+  font-weight: 300;
+  letter-spacing: -0.02em;
+  line-height: 0.98;
+  margin-bottom: 26px;
+}
+
+h1 em {
+  font-style: italic;
+  color: var(--rust);
+}
+
+.lead {
+  max-width: 740px;
+  margin: 0 auto 18px;
+  font-family: 'Cormorant Garamond', serif;
+  font-size: clamp(1.3rem, 2.5vw, 1.75rem);
+  font-style: italic;
+  line-height: 1.5;
+  color: #2a2420;
+}
+
+.header-copy {
+  max-width: 740px;
+  margin: 0 auto 32px;
+  color: #2a2420;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.button {
+  display: inline-block;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.68rem;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--paper);
+  background: var(--rust);
+  padding: 13px 18px;
+  text-decoration: none;
+  border: 1px solid var(--rust);
+  transition: all 0.2s ease;
+}
+
+.button.secondary {
+  color: var(--rust);
+  background: transparent;
+}
+
+.button:hover {
+  opacity: 0.9;
+}
+
+main {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 70px 60px 100px;
+}
+
+section {
+  margin-bottom: 60px;
+}
+
+section h2 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.65rem;
+  font-weight: 400;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin-bottom: 22px;
+}
+
+section h3 {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.45rem;
+  font-style: italic;
+  font-weight: 400;
+  color: var(--rust);
+  margin: 26px 0 8px;
+}
+
+section p {
+  color: #2a2420;
+  margin-bottom: 1.1em;
+}
+
+section p:last-child {
+  margin-bottom: 0;
+}
+
+section ul {
+  margin: 22px 0 28px 0;
+  padding-left: 0;
+  list-style: none;
+}
+
+section li {
+  position: relative;
+  padding-left: 38px;
+  margin-bottom: 13px;
+  color: #2a2420;
+}
+
+section ul li::before {
+  content: "§";
+  position: absolute;
+  left: 0;
+  top: -1px;
+  font-family: 'Cormorant Garamond', serif;
+  font-style: italic;
+  color: var(--rust);
+}
+
+.panel {
+  background: var(--cream);
+  border: 1px solid rgba(139,115,85,0.2);
+  padding: 44px 48px;
+  margin: 70px 0;
+  position: relative;
+}
+
+.panel::before {
+  content: 'PM';
+  position: absolute;
+  top: -22px;
+  left: 48px;
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 2.2rem;
+  font-weight: 300;
+  color: var(--rust);
+  background: var(--cream);
+  padding: 0 10px;
+  line-height: 1;
+}
+
+.cta-section {
+  border-top: 1px solid rgba(139,115,85,0.25);
+  padding-top: 48px;
+  margin-top: 70px;
+  text-align: center;
+}
+
+.cta-note {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: clamp(1.25rem, 2.4vw, 1.6rem);
+  font-style: italic;
+  line-height: 1.5;
+  max-width: 680px;
+  margin: 0 auto 30px;
+}
+
+footer {
+  text-align: center;
+  padding: 40px 60px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.6rem;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  color: rgba(139,115,85,0.5);
+  border-top: 1px solid rgba(139,115,85,0.15);
+}
+
+footer a {
+  color: rgba(139,115,85,0.75);
+  text-decoration: none;
+  border-bottom: 1px solid rgba(139,115,85,0.25);
+}
+
+@media (max-width: 760px) {
+  .nav {
+    position: relative;
+    top: auto;
+    left: auto;
+    right: auto;
+    justify-content: center;
+    padding: 22px 20px 0;
+    gap: 18px;
+    flex-wrap: wrap;
+  }
+
+  header {
+    padding: 42px 28px 58px;
+  }
+
+  .rule {
+    left: 28px;
+    right: 28px;
+  }
+
+  main {
+    padding: 50px 28px 70px;
+  }
+
+  .panel {
+    padding: 34px 24px;
+  }
+
+  section li {
+    padding-left: 34px;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<nav class="nav">
+  <a href="index.html">Overview</a>
+  <a href="rates.html">Rates &amp; Engagement</a>
+  <a href="approach.html">Approach</a>
+  <a class="active" href="seo-audit.html">SEO Audit</a>
+  <a href="mailto:inquiry@petermoroney.com?subject=Consulting%20enquiry">Contact</a>
+</nav>
+
+<header>
+  <div class="rule"></div>
+
+  <div class="eyebrow">SEO Audit · Website Optimisation · Conversion</div>
+
+  <h1>SEO Audit &amp; <em>Website Optimisation</em></h1>
+
+  <p class="lead">
+    If your website isn’t generating enough enquiries, there’s usually a reason.
+  </p>
+
+  <p class="header-copy">
+    Most sites have a mix of technical issues, weak structure, unclear messaging, and poor conversion pathways.
+    A practical SEO audit identifies what’s holding your site back – and what to fix first.
+  </p>
+
+  <div class="buttons">
+    <a href="https://calendly.com/peter-moroney-1byb/30min" class="button" target="_blank" rel="noopener">
+      Book a free 20-minute consultation
+    </a>
+
+    <a href="mailto:inquiry@petermoroney.com?subject=SEO%20audit%20enquiry" class="button secondary">
+      Request an SEO audit
+    </a>
+  </div>
+</header>
+
+<main>
 
   <section>
     <h2>What’s Included</h2>
@@ -111,7 +442,7 @@
     </ul>
   </section>
 
-  <section>
+  <section class="panel">
     <h2>What You Get</h2>
 
     <ul>
@@ -123,7 +454,7 @@
     </ul>
 
     <p>
-      No jargon. No inflated reporting. Just clear advice you can act on.
+      I don't do jargon. I won't inflate reporting. I'll provide clear advice you can understand and act on.
     </p>
   </section>
 
@@ -160,12 +491,12 @@
 
     <h3>Will the audit improve my rankings?</h3>
     <p>
-      The audit identifies the issues that may be limiting search performance and provides a practical plan to address them. Rankings depend on implementation, competition and content quality.
+      The audit identifies issues that may be limiting search performance and provides a practical plan to address them. Rankings depend on implementation, competition and content quality.
     </p>
 
     <h3>Do you help implement the recommendations?</h3>
     <p>
-      Yes. I can either provide the audit as a standalone review or help implement the changes directly.
+      Yes. The audit can be provided as a standalone review, or I can help implement the recommended changes.
     </p>
 
     <h3>Is this suitable for a small business website?</h3>
@@ -177,18 +508,27 @@
   <section class="cta-section">
     <h2>Request a practical SEO audit</h2>
 
-    <p>
+    <p class="cta-note">
       Get a clear view of what to fix first to improve visibility, engagement and enquiries.
     </p>
 
-    <div class="cta-row">
-      <a href="https://calendly.com/peter-moroney-1byb/30min" class="button">
+    <div class="buttons">
+      <a href="https://calendly.com/peter-moroney-1byb/30min" class="button" target="_blank" rel="noopener">
         Book a free 20-minute consultation
       </a>
-      <a href="mailto:inquiry@petermoroney.com" class="button secondary">
+
+      <a href="mailto:inquiry@petermoroney.com?subject=SEO%20audit%20enquiry" class="button secondary">
         Send an enquiry
       </a>
     </div>
   </section>
 
 </main>
+
+<footer>
+  &copy; Peter Moroney Consulting · SEO Audit · Website Optimisation · Melbourne, Australia &nbsp;·&nbsp;
+  <a href="index.html">Overview</a>
+</footer>
+
+</body>
+</html>
