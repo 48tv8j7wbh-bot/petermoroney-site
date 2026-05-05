@@ -295,6 +295,15 @@ section p {
   margin-bottom: 1.1em;
 }
 
+.cta-note {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: clamp(1.25rem, 2.4vw, 1.6rem);
+  font-style: italic;
+  line-height: 1.5;
+  max-width: 680px;
+  margin: 0 auto 28px;
+}
+  
 .three {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -425,6 +434,49 @@ section p {
   color: var(--sepia);
 }
 
+section ul,
+section ol {
+  margin: 22px 0 28px 0;
+  padding-left: 0;
+  list-style: none;
+}
+
+section li {
+  position: relative;
+  padding-left: 34px;
+  margin-bottom: 12px;
+  color: #2a2420;
+}
+
+section ul li::before {
+  content: "§";
+  position: absolute;
+  left: 0;
+  top: 0;
+  font-family: 'Cormorant Garamond', serif;
+  font-style: italic;
+  color: var(--rust);
+}
+
+section ol {
+  counter-reset: elegant-counter;
+}
+
+section ol li {
+  counter-increment: elegant-counter;
+}
+
+section ol li::before {
+  content: counter(elegant-counter, decimal-leading-zero);
+  position: absolute;
+  left: 0;
+  top: 1px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.65rem;
+  letter-spacing: 0.12em;
+  color: var(--gold);
+}
+  
 .cta {
   border-top: 1px solid rgba(139,115,85,0.25);
   padding-top: 44px;
@@ -731,9 +783,9 @@ footer a {
  <section class="cta-section">
   <h2>Ready to improve your website performance?</h2>
 
-  <p>
-    Get a clear view of what’s working, what’s missing, and what to fix first.
-  </p>
+ <p class="cta-note">
+  Get a clear view of what’s working, what’s missing, and what to fix first.
+</p>
 
   <div class="buttons">
     <a class="button" href="https://calendly.com/peter-moroney-1byb/30min" target="_blank" rel="noopener">
