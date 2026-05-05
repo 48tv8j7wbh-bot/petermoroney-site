@@ -1,0 +1,194 @@
+<main>
+
+<title>SEO Audit & Website Optimisation | Peter Moroney</title>
+
+<meta name="description" content="Practical SEO audits for small to medium business websites. Identify technical issues, improve search visibility, strengthen conversion pathways and increase enquiries.">
+
+<link rel="canonical" href="https://petermoroney.com/seo-audit.html">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "name": "SEO Audit and Website Optimisation",
+  "serviceType": "SEO Audit",
+  "provider": {
+    "@type": "Person",
+    "name": "Peter Moroney",
+    "url": "https://petermoroney.com/"
+  },
+  "areaServed": {
+    "@type": "Country",
+    "name": "Australia"
+  },
+  "description": "A practical SEO and website optimisation audit for small to medium business websites, covering search visibility, technical SEO, content structure and conversion pathways.",
+  "url": "https://petermoroney.com/seo-audit.html"
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "How long does an SEO audit take?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "For most small to medium business websites, the audit can usually be completed within a few days, depending on the size and complexity of the site."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Will the audit improve my rankings?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The audit identifies the issues that may be limiting search performance and provides a practical plan to address them. Rankings depend on implementation, competition and content quality."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do you help implement the recommendations?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. The audit can be provided as a standalone review, or Peter Moroney can help implement the recommended changes."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is this suitable for a small business website?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. The audit is designed to be practical and proportionate, with recommendations based on what will materially improve outcomes."
+      }
+    }
+  ]
+}
+</script>
+
+  <section class="hero">
+    <h1>SEO Audit & Website Optimisation</h1>
+
+    <p class="lead">
+      If your website isn’t generating enough enquiries, there’s usually a reason.
+    </p>
+
+    <p>
+      Most sites have a mix of technical issues, weak structure, unclear messaging, and poor conversion pathways. A practical SEO audit identifies what’s holding your site back – and what to fix first.
+    </p>
+
+    <div class="cta-row">
+      <a href="https://calendly.com/peter-moroney-1byb/30min" class="button">
+        Book a free 20-minute consultation
+      </a>
+      <a href="mailto:inquiry@petermoroney.com" class="button secondary">
+        Request an SEO audit
+      </a>
+    </div>
+  </section>
+
+  <section>
+    <h2>What’s Included</h2>
+
+    <p>
+      The audit reviews the practical foundations that affect search visibility, website performance and enquiry generation.
+    </p>
+
+    <ul>
+      <li>Indexing and crawlability</li>
+      <li>robots.txt and XML sitemap</li>
+      <li>Canonical tags and URL structure</li>
+      <li>Title tags and meta descriptions</li>
+      <li>Structured data and schema</li>
+      <li>Internal linking and navigation</li>
+      <li>Keyword positioning and consistency</li>
+      <li>Page structure and HTML quality</li>
+      <li>Media and asset handling</li>
+      <li>Performance and load behaviour</li>
+      <li>Mobile usability</li>
+      <li>Conversion pathways and calls-to-action</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>What You Get</h2>
+
+    <ul>
+      <li>A clear summary of what is working and what is not</li>
+      <li>A practical scorecard across key SEO and conversion areas</li>
+      <li>Specific issues affecting visibility, engagement and enquiries</li>
+      <li>A prioritised action plan based on effort and impact</li>
+      <li>Optional help implementing the recommended changes</li>
+    </ul>
+
+    <p>
+      No jargon. No inflated reporting. Just clear advice you can act on.
+    </p>
+  </section>
+
+  <section>
+    <h2>Who This Is For</h2>
+
+    <ul>
+      <li>Small businesses not getting enough website enquiries</li>
+      <li>Service businesses that rely on search visibility</li>
+      <li>Business owners unsure what to fix first</li>
+      <li>Websites getting traffic but not converting it into leads</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Why This Approach Works</h2>
+
+    <p>
+      Many SEO reports focus on technical detail but miss the commercial question: is the site helping people take action?
+    </p>
+
+    <p>
+      This audit looks at both search performance and conversion. The aim is not just to improve rankings, but to help the website generate better enquiries.
+    </p>
+  </section>
+
+  <section>
+    <h2>Frequently Asked Questions</h2>
+
+    <h3>How long does an SEO audit take?</h3>
+    <p>
+      For most small to medium business websites, the audit can usually be completed within a few days, depending on the size and complexity of the site.
+    </p>
+
+    <h3>Will the audit improve my rankings?</h3>
+    <p>
+      The audit identifies the issues that may be limiting search performance and provides a practical plan to address them. Rankings depend on implementation, competition and content quality.
+    </p>
+
+    <h3>Do you help implement the recommendations?</h3>
+    <p>
+      Yes. I can either provide the audit as a standalone review or help implement the changes directly.
+    </p>
+
+    <h3>Is this suitable for a small business website?</h3>
+    <p>
+      Yes. The audit is designed to be practical and proportionate, with recommendations based on what will materially improve outcomes.
+    </p>
+  </section>
+
+  <section class="cta-section">
+    <h2>Request a practical SEO audit</h2>
+
+    <p>
+      Get a clear view of what to fix first to improve visibility, engagement and enquiries.
+    </p>
+
+    <div class="cta-row">
+      <a href="https://calendly.com/peter-moroney-1byb/30min" class="button">
+        Book a free 20-minute consultation
+      </a>
+      <a href="mailto:inquiry@petermoroney.com" class="button secondary">
+        Send an enquiry
+      </a>
+    </div>
+  </section>
+
+</main>
