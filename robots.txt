@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+Disallow: /author.html
+
+Sitemap: https://petermoroney.com/sitemap.xml
